@@ -1,0 +1,191 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===== GLOBAL ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    min-height: 100vh;
+    color: #1e293b;
+}
+
+/* ===== GLASS EFFECT ===== */
+.glass {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* ===== LOGIN CARD ===== */
+.login-card {
+    width: 420px;
+    border-radius: 28px;
+    padding: 40px;
+    transition: 0.4s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+/* ===== DASHBOARD CARD ===== */
+.dashboard-card {
+    border: none;
+    border-radius: 28px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(59,130,246,0.15);
+}
+
+/* ===== NORMAL CARDS ===== */
+.card {
+    border: none;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.1);
+}
+
+/* ===== INPUTS ===== */
+.form-control {
+    border-radius: 14px;
+    border: 1px solid #dbeafe;
+    padding: 14px 18px;
+    background: rgba(255,255,255,0.9);
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    border-radius: 14px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    box-shadow: 0 10px 25px rgba(99,102,241,0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(99,102,241,0.45);
+}
+
+/* DANGER BUTTON */
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+}
+
+.btn-danger:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(239,68,68,0.35);
+}
+
+/* SUCCESS BUTTON */
+.btn-success {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+}
+
+.btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(16,185,129,0.35);
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 18px;
+    background: white;
+}
+
+table th {
+    background: #f1f5f9;
+    padding: 16px;
+    font-weight: 600;
+    color: #334155;
+}
+
+table td {
+    padding: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+table tr:hover {
+    background: #f8fafc;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: rgba(255,255,255,0.7) !important;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 0 0 20px 20px;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ===== BADGES ===== */
+.badge {
+    border-radius: 12px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
